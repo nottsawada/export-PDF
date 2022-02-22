@@ -1,0 +1,14 @@
+{
+  "targets": {
+    "dekhordemo-23dde": {
+      "hosting": {
+        "export-file-pdf": [
+          "dekhordemo-23dde"
+        ]
+      }
+    }
+  },
+  "projects": {
+    "default": "dekhordemo-23dde"
+  }
+}

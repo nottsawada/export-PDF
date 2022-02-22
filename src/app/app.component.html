@@ -1,0 +1,31 @@
+<div class="container">
+  <div class="card">
+      <div class="card-body">
+          <div id="invoice">
+              <div class="toolbar hidden-print">
+                  <div class="text-end">
+                      <button type="button" class="btn btn-dark"><i class="fa fa-print"></i> Print</button>
+<div class="col-md-8" id="htmlData">
+  <table class="table table-bordered">
+      <tr class="table-primary">
+          <th>No</th>
+          <th>รายการ</th>
+          <th>อัตราค่าบริการต่อหน่วย</th>
+          <th>จำนวนหน่วยทีใช้</th>
+          <th>รวมเงิน</th>
+      </tr>
+      <tr *ngFor="let invoice of INVOICES">
+          <th>{{invoice.No}}</th>
+          <td>{{invoice.name}}</td>
+          <td>{{invoice.count}}</td>
+          <td>{{invoice.use}}</td>
+          <td>{{invoice.summary}}</td>
+      </tr>
+  </table>
+</div>
+
+
+
+<div class="col-md-4 text-right">
+  <button class="btn btn-success btn-block" (click)="openPDF()">Download PDF</button>
+</div>
